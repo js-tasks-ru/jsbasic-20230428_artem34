@@ -1,3 +1,10 @@
 function showSalary(users, age) {
-  // ваш код...
+  let result = [];
+  users.forEach(function(arr) {
+    if (arr.age <= age){
+      result.push(`${arr.name}, ${arr.balance}`);
+    }
+  });
+ 
+  return result.join('\n');
 }
